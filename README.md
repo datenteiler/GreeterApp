@@ -1,1 +1,5 @@
 # GreeterApp
+
+```
+dotnet run Welt
+```
