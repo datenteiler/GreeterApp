@@ -8,7 +8,7 @@ Dieses Programm besteht aus drei Komponenten:
 
 Alle drei Komponenten müssen noch mit dem Befehl ```dotnet build``` kompiliert bzw. gebaut werden. 
 
-Das funktioniert beispielsweise mit dem folgenden Befehl in der PowerShell:
+Das funktioniert beispielsweise mit dem folgenden Befehl in der PowerShell, der in jeden Ordner springt, den Befehl ausführt und wieder zurück springt:
 
 ```
 foreach ($item in $(dir -Directory).Name )
@@ -23,10 +23,10 @@ Sind alle drei Komponenten fertig, wird das PowerShell-Modul geladen und das Cmd
 
 ```
 ipmo .\GreeterCmdlet\bin\Debug\netstandard2.0\GreeterCmdlet.dll
-Get-Greeting Welt
+Get-Greeting -Name Welt
 ```
 
-Das ausführbare Programm für die Konsole cmd.exe kann im Ordner "GreeterCmd" mit dem folgenden Befehl gestartet werden:
+Das ausführbare Programm für die Konsole kann im Ordner "GreeterCmd" mit dem folgenden Befehl gestartet werden:
 
 ```
 dotnet run Welt
